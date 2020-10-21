@@ -10,7 +10,7 @@ Truncates a string up to a specified length.
 
 ```js
 const truncateString = (str, num) =>
-  str.length > num ? str.slice(0, num > 3 ? num - 3 : num) + '...' : str;
+  str.length > num ? str.slice(0, num > 3 ? -3 : 0) + '...' : str;
 ```
 
 ```js
